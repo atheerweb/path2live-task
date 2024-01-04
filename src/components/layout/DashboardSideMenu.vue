@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
-
-const drawer = ref(true)
+defineProps<{
+  drawer: boolean
+}>()
 const sidebarLinks = computed(() => [
   {
     icon: 'mdi-widgets',
@@ -24,11 +25,11 @@ const sidebarLinks = computed(() => [
 ])
 </script>
 <template>
-  <v-navigation-drawer :model-value="drawer" permanent color="dashboard" dir="auto">
+  <v-navigation-drawer :model-value="drawer" permanent>
     <v-list>
-      <div v-for="(item, i) in sidebarLinks" :key="i" data-test="list">
+      <v-list-item v-for="(item, i) in sidebarLinks" :key="i" data-test="list">
         <v-list-item link :title="item.title" :prepend-icon="item.icon" :to="item.to"></v-list-item>
-      </div>
+      </v-list-item>
     </v-list>
   </v-navigation-drawer>
 </template>
