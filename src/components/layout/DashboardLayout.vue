@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 import NavigationBar from '@/components/layout/NavigationBar.vue'
 import DashboardSideMenu from '@/components/layout/DashboardSideMenu.vue'
-const drawer = ref(true)
+const drawer = ref(false)
 </script>
 <template>
   <v-card class="h-screen">
