@@ -2,6 +2,21 @@
 
 Dashboard with analytics module
 
+## Project Review hints
+
+1. you will find that I have applied simple CI/CD pipeline through github actions which takes the code and and tests it and deploy it to vercel on each merge to main branch
+2. also you will find me using pull requests and deleting branch on close
+3. I have applied some unit testing and basic e2e tests
+
+## Packages installed
+
+1. Cypress
+2. Vuetify
+3. VUE test utils
+4. JSON server
+5. axios
+6. VUE chartjs
+
 ## Recommended IDE Setup
 
 [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
@@ -31,12 +46,6 @@ pnpm install
 
 ```sh
 pnpm dev
-```
-
-### Run fake database server
-
-```sh
-pnpm json-server --watch db.json
 ```
 
 ### Type-Check, Compile and Minify for Production

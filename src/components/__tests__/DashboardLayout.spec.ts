@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest'
 
 import { mount } from '@vue/test-utils'
 import DashboardLayout from '../layout/DashboardLayout.vue'
-import { VMenu, VNavigationDrawer } from 'vuetify/components'
+
 import DashboardSideMenuVue from '../layout/DashboardSideMenu.vue'
 import NavigationBarVue from '../layout/NavigationBar.vue'
 
