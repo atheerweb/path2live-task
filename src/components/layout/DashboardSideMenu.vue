@@ -13,7 +13,7 @@ const sidebarLinks = computed(() => [
 ])
 </script>
 <template>
-  <v-navigation-drawer data-name="drawer" :model-value="drawer">
+  <v-navigation-drawer data-name="drawer" :model-value="drawer" parament>
     <v-list>
       <v-list-item v-for="(item, i) in sidebarLinks" :key="i" data-test="list">
         <v-list-item link :title="item.title" :prepend-icon="item.icon" :to="item.to"></v-list-item>
