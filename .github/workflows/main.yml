@@ -17,8 +17,17 @@ jobs:
     - name: 🚚 Use Nodejs 16
       uses: actions/setup-node@v2
 
+    - uses: pnpm/action-setup@v2
+      name: Install pnpm
+      id: pnpm-install
+      with:
+        version: 7
+        run_install: false
+
+
     - name: 📦 install modules
-      run: npm install 
+      run: pnpm install 
+
 
     - name: 🧪 runs unit tests
       run: npm run test:unit-once 
@@ -38,4 +47,3 @@ jobs:
     - name: Deploy Project Artifacts to Vercel
       run: vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }}
 
-      
