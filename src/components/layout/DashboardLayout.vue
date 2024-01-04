@@ -7,6 +7,7 @@ const drawer = ref(window.innerWidth > 500 ? true : false)
 </script>
 <template>
   <v-card>
+    
     <v-layout>
       <!-- 👉 TOP NAVIGATION -->
       <navigation-bar @toggle-side-menu="drawer = !drawer" />
