@@ -68,7 +68,7 @@ const chosenFilter = ref<{ id: number; name: string; value: string[] }>(filters.
           v-if="chosenChart?.includes(chart.id)"
           :data="chart.data"
           :labels="chosenFilter.value"
-          :title="chart.title"
+          :title="chart.name"
           :type="chart.type"
         />
       </v-col>
