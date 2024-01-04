@@ -5,22 +5,10 @@ defineProps<{
 }>()
 const sidebarLinks = computed(() => [
   {
-    icon: 'mdi-widgets',
-    title: 'home',
+    icon: 'mdi-chart-timeline-variant-shimmer',
+    title: 'analytics',
     to: '/',
     slug: 'summary'
-  },
-  {
-    icon: 'mdi-food-turkey',
-    title: 'orders',
-    to: '/orders',
-    slug: 'orders'
-  },
-  {
-    icon: 'mdi-cart',
-    title: 'products',
-    to: '/products',
-    slug: 'products'
   }
 ])
 </script>
