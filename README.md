@@ -8,7 +8,6 @@ Dashboard with analytics module
 2. also you will find me using pull requests and deleting branch on close
 3. I have applied some unit testing and basic e2e tests
 
-
 ## Packages installed
 
 1. Cypress
@@ -17,7 +16,6 @@ Dashboard with analytics module
 4. JSON server
 5. axios
 6. VUE chartjs
-
 
 ## Recommended IDE Setup
 
@@ -48,16 +46,6 @@ pnpm install
 
 ```sh
 pnpm dev
-```
-
-### Change the value of axios base url to access local json server
-
-go to path src/plugins/axios change baseUrl to  <http://localhost:3000>
-
-### Run fake database server
-
-```sh
-pnpm json-server --watch db.json
 ```
 
 ### Type-Check, Compile and Minify for Production
