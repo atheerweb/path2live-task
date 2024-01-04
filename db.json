@@ -1,40 +1,36 @@
 {
-  "charts": {
-    "product_performance_quarterly":[
-      {
-        "label": "dish washer",
-        "backgroundColor": "#000",
-        "data": [1,2,10]
-      },
-      {
-        "label": "oven",
-        "backgroundColor": "#03C03C",
-        "data": [5,20,9]
-      },
-      {
-        "label": "TVs",
-        "backgroundColor": "red",
-        "data": [1,11,5]
-      }
-    ],
-    "sales_quarterly":
-      {
-      
+  "charts": [
+    {
+      "id":1,
+      "name":"products performance quarterly",
+      "data":[
+        {
+          "label": "dish washer",
+          "backgroundColor": "#000",
+          "data": [1,2,10]
+        },
+        {
+          "label": "oven",
+          "backgroundColor": "#03C03C",
+          "data": [5,20,9]
+        },
+        {
+          "label": "TVs",
+          "backgroundColor": "red",
+          "data": [1,11,5]
+        }
+      ]
+    },
+    {
+      "id":1,
+      "name":"sales quarterly",
+      "data":[{
         "backgroundColor": "yellow",
         "data": [1000000,2000000,1500000]
-      }
+      }]
+    }
     
     
 
-  },
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+    ]
 }
