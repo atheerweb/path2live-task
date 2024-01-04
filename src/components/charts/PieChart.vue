@@ -18,9 +18,9 @@ const chartOptions = {
 }
 </script>
 <template>
-  <div>
+  <v-card title="Sales trend">
     <pie id="my-chart-id" :options="chartOptions" :data="chartData" />
-  </div>
+  </v-card>
 </template>
 
 <style scoped></style>
