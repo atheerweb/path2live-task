@@ -39,6 +39,7 @@ const chosenFilter = ref<{ id: number; name: string; value: string[] }>(filters.
           <v-autocomplete
             v-model="chosenChart"
             :append-inner-icon="'mdi-magnify'"
+            :label="'choose a chart'"
             variant="solo"
             :multiple="true"
             chips
@@ -51,6 +52,7 @@ const chosenFilter = ref<{ id: number; name: string; value: string[] }>(filters.
           <v-autocomplete
             v-model="chosenFilter"
             :append-inner-icon="'mdi-filter'"
+            :label="'choose filter'"
             variant="solo"
             :items="filters"
             :item-title="'name'"
