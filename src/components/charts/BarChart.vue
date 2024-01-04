@@ -25,7 +25,7 @@ ChartJS.register(Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale)
 
 const chartData = {
   labels: props.labels,
-  datasets: props.datasets
+  datasets: props.data
 }
 const chartOptions = {
   responsive: true
