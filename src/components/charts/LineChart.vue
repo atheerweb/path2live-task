@@ -36,8 +36,10 @@ const chartOptions = {
 }
 </script>
 <template>
-  <v-card>
-    <Line id="my-chart-id" :options="chartOptions" :data="chartData" :width="400" :height="400" />
+  <v-card :title="title" height="400">
+    <div>
+      <Line id="my-chart-id" :options="chartOptions" :data="chartData" :width="330" :height="330" />  
+    </div>
   </v-card>
 </template>
 
