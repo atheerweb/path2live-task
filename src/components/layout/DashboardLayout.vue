@@ -5,7 +5,7 @@ import DashboardSideMenu from '@/components/layout/DashboardSideMenu.vue'
 const drawer = ref(false)
 </script>
 <template>
-  <v-card class="h-screen">
+  <v-card >
     <v-layout>
       <!-- 👉 TOP NAVIGATION -->
       <navigation-bar @toggle-side-menu="drawer = !drawer" />
