@@ -22,13 +22,13 @@ interface Chart {
 
 const props = defineProps<{
   labels: Array<string>
-  data: Chart
+  data: Array<Chart>
   title: string
 }>()
 
 const chartData = {
   labels: props.labels,
-  datasets: [props.data]
+  datasets: props.data
 }
 const chartOptions = {
   responsive: true,
@@ -36,9 +36,9 @@ const chartOptions = {
 }
 </script>
 <template>
-  <v-card :title="title" height="400">
+  <v-card :title="title" height="285">
     <div>
-      <Line id="my-chart-id" :options="chartOptions" :data="chartData" :width="330" :height="330" />  
+      <Line id="my-chart-id" :options="chartOptions" :data="chartData" :width="250" :height="250" />
     </div>
   </v-card>
 </template>
