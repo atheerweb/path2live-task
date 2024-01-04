@@ -22,11 +22,3 @@ jobs:
     
     - name: ⚒️ build project
       run: npm run build
-
-
-
-
-
-
-
-
