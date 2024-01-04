@@ -1,5 +1,5 @@
 <script setup lang="ts">
-interface BarChart {
+interface Chart {
   label: string
   backgroundColor: string
   data: Array<number>
@@ -7,7 +7,7 @@ interface BarChart {
 
 const props = defineProps<{
   labels: Array<string>
-  data: Array<BarChart>
+  data: Array<Chart>
   title: string
 }>()
 

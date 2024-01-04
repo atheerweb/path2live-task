@@ -12,11 +12,20 @@
         "data": [5,20,9]
       },
       {
-        "label": "oven",
+        "label": "TVs",
         "backgroundColor": "red",
         "data": [1,11,5]
       }
-    ]
+    ],
+    "sales_quarterly":
+      {
+      
+        "backgroundColor": "yellow",
+        "data": [1000000,2000000,1500000]
+      }
+    
+    
+
   },
   "comments": [
     {
