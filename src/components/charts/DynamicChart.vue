@@ -13,6 +13,8 @@ const props = defineProps<{
   title: string
   type: string
 }>()
+
+
 </script>
 <template>
   <div>
