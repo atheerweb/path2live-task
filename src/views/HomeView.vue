@@ -35,6 +35,8 @@ const chosenFilter = ref<{ id: number; name: string; value: string[] }>(filters.
     <!-- SEARCH AND FILTERS FORM -->
     <v-form>
       <v-row>
+
+        
         <v-col cols="12" sm="6">
           <v-autocomplete
             v-model="chosenChart"
