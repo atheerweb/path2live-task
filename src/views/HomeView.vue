@@ -7,7 +7,11 @@ import PieChart from '@/components/charts/PieChart.vue'
   <v-container>
     <v-row>
       <v-col cols="12" sm="6">
-        <bar-chart></bar-chart>
+        <bar-chart
+          :title="'product-performance'"
+          :labels="['hi', 'bye', 'hi', 'lol']"
+          :data="[10, 20, 30, 40]"
+        ></bar-chart>
       </v-col>
       <v-col cols="12" sm="6">
         <pie-chart></pie-chart>

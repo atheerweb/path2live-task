@@ -1,4 +1,16 @@
 <script setup lang="ts">
+interface BarChart {
+  label: string
+  backgroundColor: string
+  data: Array<number>
+}
+
+const props = defineProps<{
+  labels: Array<string>
+  data: Array<BarChart>
+  title: string
+}>()
+
 import { Bar } from 'vue-chartjs'
 import {
   Chart as ChartJS,
@@ -12,17 +24,17 @@ import {
 ChartJS.register(Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale)
 
 const chartData = {
-  labels: ['January', 'February', 'March'],
-  datasets: [{ data: [40, 20, 12] }]
+  labels: props.labels,
+  datasets: props.datasets
 }
 const chartOptions = {
   responsive: true
 }
 </script>
 <template>
-  <div>
+  <v-card :title="title">
     <bar id="my-chart-id" :options="chartOptions" :data="chartData" />
-  </div>
+  </v-card>
 </template>
 
 <style scoped></style>
