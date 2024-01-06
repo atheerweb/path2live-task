@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
 import DashboardLayout from '@/components/layout/DashboardLayout.vue'
+import AnalyticsSkeleton from '@/components/skeleton/AnalyticsSkeleton.vue'
 </script>
 
 <template>
@@ -14,7 +15,9 @@ import DashboardLayout from '@/components/layout/DashboardLayout.vue'
               <component :is="Component"></component>
 
               <!-- loading state -->
-              <template #fallback> Loading... </template>
+              <template #fallback>
+                <analytics-skeleton />
+              </template>
             </Suspense>
           </KeepAlive>
         </Transition>
