@@ -8,7 +8,8 @@
         {
           "label": "dish washer",
           "backgroundColor": "#000",
-          "data": [1,2,10,20,10,5,3,9,12,18,2,10]
+          "data":[1,2,10,20,10,5,3,9,12,18,2,10]
+
         },
         {
           "label": "oven",
@@ -35,5 +36,10 @@
     
     
 
-    ]
+  ],
+  "metrics":{
+    "sales": "100,000,000 USD",
+    "orders":50,
+    "customers":200
+  }
 }
