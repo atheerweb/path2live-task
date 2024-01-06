@@ -27,7 +27,7 @@ const filters = ref([
   },
   { id: 2, name: 'quarterly', value: ['January', 'February', 'March'] }
 ])
-const chosenChart = ref<null | number[]>([1])
+const chosenChart = ref<null | number[]>(null)
 const chosenFilter = ref<{ id: number; name: string; value: string[] }>(filters.value[1])
 </script>
 

@@ -1,4 +1,4 @@
-on: 
+on:
   push:
     branches:
       - main
@@ -11,39 +11,40 @@ jobs:
     name: 🎉 Deploy
     runs-on: ubuntu-latest
     steps:
-    - name: 🚚 Get latest code
-      uses: actions/checkout@v3
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v3
 
-    - name: 🚚 Use Nodejs 16
-      uses: actions/setup-node@v2
+      - name: 🚚 Use Nodejs 16
+        uses: actions/setup-node@v2
 
-    - uses: pnpm/action-setup@v2
-      name: Install pnpm
-      id: pnpm-install
-      with:
-        version: 7
-        run_install: false
+      - uses: pnpm/action-setup@v2
+        name: Install pnpm
+        id: pnpm-install
+        with:
+          version: 7
+          run_install: false
+
+      - name: 📦 install modules
+        run: pnpm install --no-frozen-lockfile
+
+      - name: 🧪 runs unit tests
+        run: pnpm run test:unit:once
+
+      - name: ⚒️ test building the project
+        run: pnpm run build
+
+      - name: 🎭 runs end to end tests
+        run: pnpm run test:unit:e2e
 
 
-    - name: 📦 install modules
-      run: pnpm install --no-frozen-lockfile
+      - name: Install Vercel CLI
+        run: pnpm install --global vercel@latest
 
+      - name: Pull Vercel Environment Information
+        run: vercel pull --yes --environment=preview --token=${{ secrets.VERCEL_TOKEN }}
 
-    - name: 🧪 runs unit tests
-      run: pnpm run test:unit-once 
-    
-    - name: ⚒️ test building the project
-      run: pnpm run build
+      - name: Build Project Artifacts
+        run: vercel build --token=${{ secrets.VERCEL_TOKEN }}
 
-    - name: Install Vercel CLI
-      run: pnpm install --global vercel@latest
-
-    - name: Pull Vercel Environment Information
-      run: vercel pull --yes --environment=preview --token=${{ secrets.VERCEL_TOKEN }}
-
-    - name: Build Project Artifacts
-      run: vercel build --token=${{ secrets.VERCEL_TOKEN }}
-
-    - name: Deploy Project Artifacts to Vercel
-      run: vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }}
-
+      - name: Deploy Project Artifacts to Vercel
+        run: vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }}
