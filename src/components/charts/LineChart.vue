@@ -36,7 +36,8 @@ const chartOptions = {
 }
 </script>
 <template>
-  <v-card :title="title" height="285">
+  <v-card height="332">
+    <v-card-title class="text-capitalize">{{ title }}</v-card-title>
     <div>
       <Line id="my-chart-id" :options="chartOptions" :data="chartData" :width="250" :height="250" />
     </div>
