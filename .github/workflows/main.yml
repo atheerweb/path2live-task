@@ -34,7 +34,7 @@ jobs:
         run: pnpm run build
 
       - name: 🎭 runs end to end tests
-        run: pnpm run test:unit:e2e
+        run: pnpm run test:e2e
 
 
       - name: Install Vercel CLI
