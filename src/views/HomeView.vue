@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import MetricCards from '@/components/home/MetricCards.vue'
 import DynamicChart from '@/components/charts/DynamicChart.vue'
 import axios from 'axios'
 import { ref } from 'vue'
@@ -32,11 +33,13 @@ const chosenFilter = ref<{ id: number; name: string; value: string[] }>(filters.
 
 <template>
   <v-container>
-    <!-- SEARCH AND FILTERS FORM -->
+    <!-- 👉 TITLE -->
+    <h1 class="mb-10">Path2Live Analytics</h1>
+    <!-- 👉 METRICS -->
+    <metric-cards />
+    <!-- 👉 SEARCH AND FILTERS FORM -->
     <v-form>
       <v-row>
-
-        
         <v-col cols="12" sm="6">
           <v-autocomplete
             v-model="chosenChart"
@@ -64,7 +67,7 @@ const chosenFilter = ref<{ id: number; name: string; value: string[] }>(filters.
         </v-col>
       </v-row>
     </v-form>
-    <!-- CHARTS DISPLAY -->
+    <!-- 👉 CHARTS DISPLAY -->
     <!-- Key trick to rerender components if filter is changed again if it was production i would refetch data with the chosen filter query param -->
     <v-row :key="chosenFilter.id">
       <v-col v-for="chart in data" :key="chart.id" cols="12" sm="6">
