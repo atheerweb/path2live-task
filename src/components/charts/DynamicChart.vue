@@ -11,12 +11,8 @@ const props = defineProps<{
   labels: Array<string>
   data: Array<Chart>
   title: string
-  type: string
+  type: 'bar' | 'line'
 }>()
-
-
-
-
 </script>
 <template>
   <div>

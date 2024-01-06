@@ -33,7 +33,7 @@ const chartOptions = {
 </script>
 <template>
   <v-card>
-    <v-card-title class="text-capitalize">{{ title }}</v-card-title>
+    <v-card-title class="text-capitalize" data-test="title">{{ title }}</v-card-title>
     <bar id="my-chart-id" :options="chartOptions" :data="chartData" />
   </v-card>
 </template>

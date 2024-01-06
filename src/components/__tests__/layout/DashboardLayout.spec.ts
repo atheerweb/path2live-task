@@ -1,10 +1,10 @@
 import { describe, it, expect } from 'vitest'
 
 import { mount } from '@vue/test-utils'
-import DashboardLayout from '../layout/DashboardLayout.vue'
+import DashboardLayout from '@/components/layout/DashboardLayout.vue'
 
-import DashboardSideMenuVue from '../layout/DashboardSideMenu.vue'
-import NavigationBarVue from '../layout/NavigationBar.vue'
+import DashboardSideMenuVue from '@/components/layout/DashboardSideMenu.vue'
+import NavigationBarVue from '@/components/layout/NavigationBar.vue'
 
 describe('DashboardLayout', () => {
   it('renders properly', () => {
