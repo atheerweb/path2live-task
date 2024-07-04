@@ -1,45 +1,97 @@
 {
-  "charts": [
+  "speakers": [
     {
-      "id":1,
-      "name":"products performance",
-      "type":"bar",
-      "data":[
-        {
-          "label": "dish washer",
-          "backgroundColor": "#000",
-          "data":[1,2,10,20,10,5,3,9,12,18,2,10]
-
-        },
-        {
-          "label": "oven",
-          "backgroundColor": "#03C03C",
-          "data": [5,20,9,20,10,5,3,9,12,18,2,10]
-        },
-        {
-          "label": "TVs",
-          "backgroundColor": "red",
-          "data": [1,11,5,20,10,5,3,9,12,18,2,10]
-        }
-      ]
+      "speakerImg3": "/speaker-img-1@2x.png",
+      "speakerColored": "/speaker-1-colored.png",
+      "hazemZagzoug": "Zeke Emanuel",
+      "groupCEOAndViceChairmanAn": "Vice Provost for Global Initiatives, the Diane v.S. Levy and Robert M. Levy University Professor"
     },
     {
-      "id":2,
-      "name":"sales",
-      "type":"line",
-      "data":[{
-      "label":"sales",
-        "backgroundColor": "yellow",
-        "data": [1000000,2000000,1500000,1400000,5000000,1000000 , 1000000,2000000,1500000 , 1200000 , 9000000 , 3000000]
-      }]
+      "speakerImg3": "/speaker-img-2@2x.png",
+      "speakerColored": "/speaker-2-colored.png",
+      "hazemZagzoug": "Mark McClellan ",
+      "groupCEOAndViceChairmanAn": "Director and Robert J. Margolis, MD, Professor of Business, Medicine and Policy at Duke-Margolis Center for Health Policy"
+    },
+    {
+      "speakerImg3": "/speaker-img-3@2x.png",
+      "speakerColored": "/speaker-3-colored.png",
+      "hazemZagzoug": "Hazem Zagzoug",
+      "groupCEOAndViceChairmanAn": "Group CEO and Vice Chairman - Andalusia Health"
+    },
+    {
+      "speakerImg3": "/speaker-img-4@2x.png",
+      "speakerColored": "/speaker-4-colored.png",
+      "hazemZagzoug": "Hana Al-rostamani",
+      "groupCEOAndViceChairmanAn": "Group CEO of First Abu Dhabi Bank ( FAP)"
+    },
+    {
+      "speakerImg3": "/speaker-img-5@2x.png",
+      "speakerColored": "/speaker-5-colored.png",
+      "hazemZagzoug": "Dr. Tawfik Khoja",
+      "groupCEOAndViceChairmanAn": "Vice Provost for Global Initiatives"
+    },
+    {
+      "speakerImg3": "/speaker-img-3@2x.png",
+      "speakerColored": "/speaker-3-colored.png",
+      "hazemZagzoug": "Hazem Zagzoug",
+      "groupCEOAndViceChairmanAn": "Group CEO and Vice Chairman - Andalusia Health"
+    },
+    {
+      "speakerImg3": "/speaker-img-3@2x.png",
+      "speakerColored": "/speaker-3-colored.png",
+      "hazemZagzoug": "Hazem Zagzoug",
+      "groupCEOAndViceChairmanAn": "Group CEO and Vice Chairman - Andalusia Health"
+    },
+    {
+      "speakerImg3": "/speaker-img-3@2x.png",
+      "speakerColored": "/speaker-3-colored.png",
+      "hazemZagzoug": "Hazem Zagzoug",
+      "groupCEOAndViceChairmanAn": "Group CEO and Vice Chairman - Andalusia Health"
+    },
+    {
+      "speakerImg3": "/speaker-img-3@2x.png",
+      "speakerColored": "/speaker-3-colored.png",
+      "hazemZagzoug": "Hazem Zagzoug",
+      "groupCEOAndViceChairmanAn": "Group CEO and Vice Chairman - Andalusia Health"
+    },
+    {
+      "speakerImg3": "/speaker-img-3@2x.png",
+      "speakerColored": "/speaker-3-colored.png",
+      "hazemZagzoug": "Hazem Zagzoug",
+      "groupCEOAndViceChairmanAn": "Group CEO and Vice Chairman - Andalusia Health"
     }
-    
-    
-
   ],
-  "metrics":{
-    "sales": "100,000,000 USD",
-    "orders":50,
-    "customers":200
-  }
+  "subscribe": [
+    {
+      "id": "1",
+      "email": "example@example.com"
+    },
+    {
+      "id": "2",
+      "email": "example2@gmail.com"
+    },
+    {
+      "id": "1596"
+    },
+    {
+      "id": "5748",
+      "email": "sas@gmai.com"
+    },
+    {
+      "id": "122a",
+      "email": "sass@gmai.com"
+    },
+    {
+      "id": "3e0e",
+      "email": "sas@gmai.com"
+    },
+    {
+      "id": "7220",
+      "email": "sas@gmai.com"
+    },
+    {
+      "id": "1905",
+      "email": "sas@gmai.com"
+    }
+  ]
 }
